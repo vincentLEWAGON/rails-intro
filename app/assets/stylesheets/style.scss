@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  html {
+  font-size: 16px;
+  }
+  body {
+  background: #333;
+  color: #fff;
+  font-family: sans-serif;
+  }
+
+  header {
+  position : absolute;
+  top: 0;
+  left: 0;
+  background: #333;
+  width: 100%;
+  height: 8vh;
+  color: #fff;
+  padding: 0 2rem;
+  }
+  nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  }
+
+  .logo {
+  font-size: 2rem;
+  }
+
+  .toggle {
+  display: none;
+  }
+
+  .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 550px;
+  }
+
+  .menu li a {
+  color: #fff;
+  text-decoration: none;
+  }
+
+  .btn {
+  background: pink;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  }
+
+  .btn-secondary {
+  background: none;
+  border: 1px solid pink;
+  }
+  .map {
+  width: 100%;
+  height: 100vh;
+  }
+
+  @media all  and (max-width: 991px) {
+  .toggle {
+  display: block;
+  font-size 2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+  }
+  }
+  .logo {
+    position: relative;
+    z-index: 20;
+  }
+
+  .ouvrir {
+  display: block;
+  }
+  .fermer {
+  display: none;
+  }
+
+  .ouvert {
+  .ouvrir {
+  display: none;
+  }
+  .fermer {
+  display: block;
+  }
+  }
+
+  .menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content:space-around;
+  }
+
+  .open .menu {
+  transform: translateX(0);
+  }
